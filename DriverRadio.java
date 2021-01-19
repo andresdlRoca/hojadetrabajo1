@@ -128,16 +128,7 @@ public class DriverRadio {
           System.out.println("\nMenu Principal de radio apagada");
           System.out.println("1. Encender la radio\n");
           
-          
           int menueleccion = scan.nextInt();
-          /*
-          if (menueleccion == 1) {
-            System.out.println("Radio encendida");
-            radio.encender();
-          } 
-          else {
-            System.out.println("Ingreso una opcion invalida, intentelo de nuevo.");
-          }*/
 
           switch(menueleccion) {
 

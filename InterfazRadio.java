@@ -9,19 +9,19 @@ estos simularan el funcionamiento de una radio.
 
 public interface InterfazRadio {
 
-  boolean isON();
+  boolean isON();//Devuelve true o false dependiendo si la radio esta prendida o apagada.
 
-  void encender();
+  void encender();//Pone el estado de la radio en true (encendido).
 
-  void apagar();
+  void apagar();//Pone el estado de la radio en false (apagada).
 
-  void incrementar();
+  void incrementar();//Incrementa el numero de la emisora.
 
-  void disminuir();
+  void disminuir();//Disminuye el numero de la emisora.
 
-  void asignar(int pos);
+  void asignar(int pos);//Asigna la emisora en la que se encuentra el usuario a uno de los 12 botones disponibles.
 
-  void emisoras(int pos);//retorna emisora guardada
+  void emisoras(int pos);//retorna emisora guardada en uno de los 12 botones.
 
   //int emisoras(int pos);
   
