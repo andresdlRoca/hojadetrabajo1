@@ -3,7 +3,7 @@ Radio.java
 Autores: Andrés de la Roca (20332) y Sebastian Aristondo ()
 Última modificación: 
 
-
+Clase que simula con su metodos el funcionamiento de una radio.
 ******************************************************************/
 import java.text.DecimalFormat;
 

@@ -3,7 +3,8 @@ InterfazRadio.java
 Autores: Andrés de la Roca (20332) y Sebastian Aristondo ()
 Última modificación: 
 
-
+Interfaz que establece los metodos que usara la clase Radio
+estos simularan el funcionamiento de una radio.
 ******************************************************************/
 
 public interface InterfazRadio {

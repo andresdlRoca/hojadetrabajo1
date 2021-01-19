@@ -3,7 +3,8 @@ DriverRadio.java
 Autores: Andrés de la Roca (20332) y Sebastian Aristondo ()
 Última modificación: 
 
-
+Esta clase es el driver del programa que simula el funcionamiento
+de una radio, toma metodos de la clase Radio para su funcionamiento
 ******************************************************************/
 import java.util.Scanner;
 import java.util.InputMismatchException;
