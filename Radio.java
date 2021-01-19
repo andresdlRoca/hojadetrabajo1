@@ -32,14 +32,16 @@ DecimalFormat df = new DecimalFormat("#.#");
   }
 
 
-  public void encender()
+  public boolean encender()
   {
     estado=true;
+    return estado;
   }
 
-  public void apagar()
+  public boolean apagar()
   {
     estado=false;
+    return estado;
   }
   
   public boolean isON()
@@ -82,6 +84,7 @@ DecimalFormat df = new DecimalFormat("#.#");
     }
     System.out.println(df.format(frecuencuaFM));
   }
+  /*
   //  Distribución de responsabilidad, la función unicamente se encarga de llamar al metodo según la frecuencia
   public void disminuir()
   {
@@ -116,7 +119,7 @@ DecimalFormat df = new DecimalFormat("#.#");
       frecuencuaFM=107.9f;
     }
     System.out.println(df.format(frecuencuaFM));
-  }
+  }*/
 
   public void asignar(int pos)
   {

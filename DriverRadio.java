@@ -25,10 +25,9 @@ public class DriverRadio {
           System.out.println("\nMenu Principal de radio");
           System.out.println("1. Apagar la radio");
           System.out.println("2. Aumentar No. de emisora");
-          System.out.println("3. Disminuir No. de emisora");
-          System.out.println("4. Asignar una emisora a boton");
-          System.out.println("5. Seleccionar emisora");
-          System.out.println("6. Cambiar de frecuencia\n");
+          System.out.println("3. Asignar una emisora a boton");
+          System.out.println("4. Seleccionar emisora");
+          System.out.println("5. Cambiar de frecuencia\n");
 
           int eleccionmenu = scan.nextInt();
 
@@ -47,14 +46,8 @@ public class DriverRadio {
               break;
             }
 
-            //Disminuye el numero de la emisora
-            case 3 : {
-              radio.disminuir();
-              break;
-            }
-
             //Asignar una emisora a uno de los 12 botones
-            case 4 : {
+            case 3 : {
               boolean menuasignar = true;
 
               while (menuasignar) {
@@ -78,7 +71,7 @@ public class DriverRadio {
             }
             
             //Selecciona emisora de alguno de los botones
-            case 5 : {
+            case 4 : {
               
               boolean menuemisora = true;
 
@@ -104,7 +97,7 @@ public class DriverRadio {
             }
 
             //Cambiar frecuencias de AM a FM
-            case 6 : {
+            case 5 : {
               radio.frecuencias();
               break;
             }

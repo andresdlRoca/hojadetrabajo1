@@ -1,2 +1,2 @@
 language = "java"
-run = "java DriverRadio"
+run = "javac DriverRadio.java"
