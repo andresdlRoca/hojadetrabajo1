@@ -32,16 +32,14 @@ DecimalFormat df = new DecimalFormat("#.#");
   }
 
 
-  public boolean encender()
+  public void encender()
   {
     estado=true;
-    return estado;
   }
 
-  public boolean apagar()
+  public void apagar()
   {
     estado=false;
-    return estado;
   }
   
   public boolean isON()
@@ -121,27 +119,32 @@ DecimalFormat df = new DecimalFormat("#.#");
     System.out.println(df.format(frecuencuaFM));
   }*/
 
-  public void asignar(int pos)
+  public boolean asignar(int pos)
   {
     if(AMFM)
     {//FM
       EmisorasFM[pos-1]=frecuencuaFM;
+      return true;
     }
     else
     {//AM
       EmisorasAM[pos-1]=frecuencuaAM;
+      return true;
     }
   }
 
-  public void emisoras(int pos)
+  public boolean emisoras(int pos)
   {
     if(AMFM)
     {//FM
-      System.out.println(EmisorasFM[pos-1]+"");
+      String emisora = df.format(EmisorasFM[pos-1]);
+      System.out.println(emisora+"");
+      return true;
     }
     else
     {//AM
       System.out.println(EmisorasAM[pos-1]+"");
+      return true;
     }
   }
   
