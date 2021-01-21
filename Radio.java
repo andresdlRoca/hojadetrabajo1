@@ -7,7 +7,7 @@ Clase que simula con su metodos el funcionamiento de una radio.
 ******************************************************************/
 import java.text.DecimalFormat;
 
-public class Radio implements InterfazRadio {
+public class Radio implements RadioGeneral {
 
 //Intancia de atributos
 //-----------------------------

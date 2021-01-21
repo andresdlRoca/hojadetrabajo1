@@ -7,7 +7,7 @@ Interfaz que establece los metodos que usara la clase Radio
 estos simularan el funcionamiento de una radio.
 ******************************************************************/
 
-public interface InterfazRadio {
+public interface RadioGeneral {
 
   boolean isON();//Devuelve true o false dependiendo si la radio esta prendida o apagada.
 
