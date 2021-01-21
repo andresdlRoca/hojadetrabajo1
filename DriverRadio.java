@@ -83,7 +83,7 @@ public class DriverRadio {
                   if (boton < 0 || boton > 12) {
                     System.out.println("No ingreso una opcion valida, intentelo de nuevo");
                   } else {
-                    radio.emisoras(boton);
+                    radio.emisora(boton);
                     menuemisora= false;
                   }
                   
@@ -98,7 +98,7 @@ public class DriverRadio {
 
             //Cambiar frecuencias de AM a FM
             case 5 : {
-              radio.frecuencias();
+              radio.frecuencia();
               break;
             }
 

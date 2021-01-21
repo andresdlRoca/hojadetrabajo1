@@ -133,7 +133,7 @@ DecimalFormat df = new DecimalFormat("#.#");
     }
   }
 
-  public boolean emisoras(int pos)
+  public boolean emisora(int pos)
   {
     if(AMFM)
     {//FM
@@ -148,7 +148,7 @@ DecimalFormat df = new DecimalFormat("#.#");
     }
   }
   
-  public void frecuencias()
+  public void frecuencia()
   {
     AMFM=!AMFM;
   }

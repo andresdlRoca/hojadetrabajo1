@@ -19,8 +19,8 @@ public interface InterfazRadio {
 
   boolean asignar(int pos);//Asigna la emisora en la que se encuentra el usuario a uno de los 12 botones disponibles.
 
-  boolean emisoras(int pos);//retorna emisora guardada en uno de los 12 botones.
+  boolean emisora(int pos);//retorna emisora guardada en uno de los 12 botones.
   
-  void frecuencias();//Cambiar am y fm
+  void frecuencia();//Cambiar am y fm
 
 }
