@@ -1,7 +1,7 @@
 /******************************************************************
-InterfazRadio.java
+RadioGeneral.java
 Autores: Andrés de la Roca (20332) y Sebastian Aristondo ()
-Última modificación: 
+Última modificación: 1/21/2021
 
 Interfaz que establece los metodos que usara la clase Radio
 estos simularan el funcionamiento de una radio.

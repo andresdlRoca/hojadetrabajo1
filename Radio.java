@@ -1,7 +1,7 @@
 /******************************************************************
 Radio.java
 Autores: Andrés de la Roca (20332) y Sebastian Aristondo ()
-Última modificación: 
+Última modificación: 1/21/2021
 
 Clase que simula con su metodos el funcionamiento de una radio.
 ******************************************************************/
@@ -27,8 +27,6 @@ DecimalFormat df = new DecimalFormat("#.#");
     AMFM = false;//Am = falso / Fm=true;
     EmisorasAM = new int[12];
     EmisorasFM = new float[12];
-    //frecuencuaAM=530;
-    //frecuencuaFM=87.9;
   }
 
 
@@ -82,42 +80,6 @@ DecimalFormat df = new DecimalFormat("#.#");
     }
     System.out.println(df.format(frecuencuaFM));
   }
-  /*
-  //  Distribución de responsabilidad, la función unicamente se encarga de llamar al metodo según la frecuencia
-  public void disminuir()
-  {
-    
-    if(AMFM)
-    {
-      disminuirFM();
-    }
-    else
-    {
-      disminuirAM();
-    }
-
-        
-  }
-
-  private void disminuirAM()
-  {
-    frecuencuaAM-=10;
-    if(frecuencuaAM<530)
-    {
-     frecuencuaAM=1610;
-    }
-  System.out.println(frecuencuaAM);
-  }
-
-  private void disminuirFM()
-  {
-    frecuencuaFM-=0.2f;
-    if(frecuencuaFM<87.9f)
-    {
-      frecuencuaFM=107.9f;
-    }
-    System.out.println(df.format(frecuencuaFM));
-  }*/
 
   public boolean asignar(int pos)
   {
@@ -152,7 +114,5 @@ DecimalFormat df = new DecimalFormat("#.#");
   {
     AMFM=!AMFM;
   }
-
-
   
 }
