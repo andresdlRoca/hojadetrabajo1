@@ -1,5 +1,8 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Clase de tests unitarios (JUnit)
+ */
 class RadioTest {
 
     @org.junit.jupiter.api.Test
@@ -24,7 +27,7 @@ class RadioTest {
     void emisora() {
         Radio prueba = new Radio();
         prueba.encender();
-        boolean guardado = prueba.emisoras(12);
+        boolean guardado = prueba.emisora(12);
         assertTrue(guardado);
 
     }

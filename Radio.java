@@ -7,6 +7,11 @@ Clase que simula con su metodos el funcionamiento de una radio.
 ******************************************************************/
 import java.text.DecimalFormat;
 
+/**
+ * Clase que simula con su metodos el funcionamiento de una radio.
+ * @author Andres de la Roca
+ * @author Sebastian Aristondo
+ */
 public class Radio implements RadioGeneral {
 
 //Intancia de atributos
@@ -29,22 +34,33 @@ DecimalFormat df = new DecimalFormat("#.#");
     EmisorasFM = new float[12];
   }
 
-
+  /**
+   * Pone el estado de la radio en true (encendido).
+   */
   public void encender()
   {
     estado=true;
   }
 
+  /**
+   * Pone el estado de la radio en false (apagada).
+   */
   public void apagar()
   {
     estado=false;
   }
-  
+
+  /**
+   * Devuelve true o false dependiendo si la radio esta prendida o apagada.
+   */
   public boolean isON()
   {
     return estado;
   }
-  //  Distribución de responsabilidad, la función unicamente se encarga de llamar al metodo según la frecuencia
+
+  /**
+   * Incrementa el numero de la emisora.
+   */
   public void incrementar()
   {
     
@@ -60,6 +76,9 @@ DecimalFormat df = new DecimalFormat("#.#");
     
   }
 
+  /**
+   * Incrementa las emisoras en la frecuencia AM
+   */
   private void incrementarAM()
   {
     frecuencuaAM+=10;
@@ -70,6 +89,9 @@ DecimalFormat df = new DecimalFormat("#.#");
     System.out.println(frecuencuaAM);
   }
 
+  /**
+   * Incrementa las emisoras en la frecuencia FM
+   */
   private void incrementarFM()
   {
     frecuencuaFM+=0.2f;
@@ -81,6 +103,11 @@ DecimalFormat df = new DecimalFormat("#.#");
     System.out.println(df.format(frecuencuaFM));
   }
 
+  /**
+   * Asigna la emisora en la que se encuentra el usuario a uno de los 12 botones disponibles.
+   * @param pos Posicion del boton al que se quiere asignar la emisora
+   * @return
+   */
   public boolean asignar(int pos)
   {
     if(AMFM)
@@ -95,6 +122,11 @@ DecimalFormat df = new DecimalFormat("#.#");
     }
   }
 
+  /**
+   * retorna emisora guardada en uno de los 12 botones.
+   * @param pos Posicion del boton al que quiere ir
+   * @return
+   */
   public boolean emisora(int pos)
   {
     if(AMFM)
@@ -109,7 +141,10 @@ DecimalFormat df = new DecimalFormat("#.#");
       return true;
     }
   }
-  
+
+  /**
+   * Cambiar am y fm
+   */
   public void frecuencia()
   {
     AMFM=!AMFM;

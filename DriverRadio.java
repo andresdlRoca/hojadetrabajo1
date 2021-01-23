@@ -9,8 +9,16 @@ de una radio, toma metodos de la clase Radio para su funcionamiento
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
+/**
+ * Clase driver del programa que simula el funcionamiento de una radio, toma metodos de la clase Radio para su funcionamiento
+ * @author Andres de la Roca
+ * @author Sebastian Aristondo
+ */
 public class DriverRadio {
-
+  /**
+   * Metodo main
+   * @param args
+   */
   public static void main(String[] args) {
 
     Scanner scan = new Scanner(System.in);

@@ -5,22 +5,51 @@ Autores: Andrés de la Roca (20332) y Sebastian Aristondo ()
 
 Interfaz que establece los metodos que usara la clase Radio
 estos simularan el funcionamiento de una radio.
+ @author Andres de la Roca
+ @author Sebastian Aristondo
 ******************************************************************/
+
 
 public interface RadioGeneral {
 
-  boolean isON();//Devuelve true o false dependiendo si la radio esta prendida o apagada.
+  /**
+   * Devuelve true o false dependiendo si la radio esta prendida o apagada.
+   */
+  boolean isON();
 
-  void encender();//Pone el estado de la radio en true (encendido).
+  /**
+   * Pone el estado de la radio en true (encendido).
+   */
 
-  void apagar();//Pone el estado de la radio en false (apagada).
+  void encender();
 
-  void incrementar();//Incrementa el numero de la emisora.
+  /**
+   * Pone el estado de la radio en false (apagada).
+   */
+  void apagar();
 
-  boolean asignar(int pos);//Asigna la emisora en la que se encuentra el usuario a uno de los 12 botones disponibles.
+  /**
+   * Incrementa el numero de la emisora.
+   */
+  void incrementar();
 
-  boolean emisora(int pos);//retorna emisora guardada en uno de los 12 botones.
-  
-  void frecuencia();//Cambiar am y fm
+  /**
+   * Asigna la emisora en la que se encuentra el usuario a uno de los 12 botones disponibles.
+   * @param pos Posicion del boton al que se quiere asignar la emisora
+   * @return true o false
+   */
+  boolean asignar(int pos);//
+
+  /**
+   * retorna emisora guardada en uno de los 12 botones.
+   * @param pos Posicion del boton al que quiere ir
+   * @return
+   */
+  boolean emisora(int pos);
+
+  /**
+   * Cambiar am y fm
+   */
+  void frecuencia();
 
 }
